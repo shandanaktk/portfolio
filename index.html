@@ -6,13 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="script.js" defer></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+    </script>
   </head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">Shandana Ift.</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#desktop-nav">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -301,6 +309,7 @@
             <h2 class="experience-sub-title project-title">
               Lahore Tourism Guide
             </h2>
+            <p class="bexp">Explore Lahore and enjoy a free tourism guide!</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -316,6 +325,9 @@
               <img src="./assets/p9.jpg" alt="Project 2" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Etch-a-Sketch</h2>
+            <p class="bexp">
+              Make a Sketch and discover your own world of freedom!
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -333,6 +345,7 @@
             <h2 class="experience-sub-title project-title">
               Domain Naming System
             </h2>
+            <p class="bexp">Keep track of all your domains and IPs with us!</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -350,6 +363,10 @@
             <h2 class="experience-sub-title project-title">
               OS Scheduling Arcade
             </h2>
+            <p class="bexp">
+              Explore our OS arcade that enables you to play with different
+              scheduling algorithms in a fun way!
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -367,6 +384,10 @@
             <h2 class="experience-sub-title project-title">
               BloodBank Management System
             </h2>
+            <p class="bexp">
+              A hospital blood bank system with all history of patients, donors
+              and recipients!
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -384,6 +405,9 @@
             <h2 class="experience-sub-title project-title">
               Weather Forecast WebApp
             </h2>
+            <p class="bexp">
+              Complete 10 days of weather forecast in your city or any other!
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -399,6 +423,7 @@
               <img src="./assets/p4.jpg" alt="Project 3" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Recipe WebApp</h2>
+            <p class="bexp">Explore new unlimited Recipes using our webApp!</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -414,6 +439,10 @@
               <img src="./assets/p3.jpg" alt="Project 3" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">BookStore WebApp</h2>
+            <p class="bexp">
+              Manage your own bookstore using our WebApp! Add, remove and update
+              your books.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -431,6 +460,9 @@
             <h2 class="experience-sub-title project-title">
               To-Do Reminders WebApp
             </h2>
+            <p class="bexp">
+              Manage your To-Do tasks with our reminders WebApp!
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -448,6 +480,10 @@
             <h2 class="experience-sub-title project-title">
               Mini-Blog Website
             </h2>
+            <p class="bexp">
+              A Mini social networking site that allows you to write blogs and
+              like, interact with other's blogs too!
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -488,12 +524,35 @@
           <p><a href="https://www.linkedin.com">+92-331-5998409</a></p>
         </div>
       </div>
+
+      <!-- form -->
+      <div class="contact-form-container">
+        <form action="/submit-form" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn btn-color-2">Submit</button>
+          </div>
+        </form>
+      </div>
+      <!-- form ends -->
     </section>
 
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#desktop-nav">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
